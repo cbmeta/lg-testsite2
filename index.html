@@ -1,29 +1,29 @@
-cbq code in page
-target: d1fz76ii430key.cloudfront.net
-EMTenant SBJ5Ma4h > 1P Pixel 5073658339772062476 > LG SG Test Pixel 1 986550502958066 dest 
-
+fbq code in page
+target: 
+  867338805256007
 <head>
-<!-- 1P Pixel Code -->
-  <script>
-  !function(a,h,e,v,n,t,s)
-    {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=h.createElement(e);t.async=!0;
-    t.src=v;s=h.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://d1fz76ii430key.cloudfront.net/sdk/capig-events.js');
-    cbq('setHost', 'https://d1fz76ii430key.cloudfront.net/');
-    cbq('init', '5073658339772062476');
-    cbq('loadConfig', '5073658339772062476');
-    cbq('track', 'PageView');
-  </script>
-  <!-- End 1P Pixel Code -->
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '867338805256007');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=867338805256007&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
 <title>pixel test page</title>
 </head>
 <body>
-    <h2>pixel test page</h2>
+    <h2>Pixel Test Page for FBQ</h2>
     <div>
     <ul>
         <li><button id="addToWishlistButton" type="button">Add to Wishlist</button></li>
@@ -32,40 +32,35 @@ EMTenant SBJ5Ma4h > 1P Pixel 5073658339772062476 > LG SG Test Pixel 1 9865505029
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
-
-
-      
     </ul>
     </div>
-<script type="text/javascript">
 
-  
+<script type="text/javascript">
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
-  cbq('track', 'AddToWishlist');
+  fbq('track', 'AddToWishlist');
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
-  cbq('track', 'AddToCart');
+  fbq('track', 'AddToCart');
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
-  cbq('track', 'InitiateCheckout');
+  fbq('track', 'InitiateCheckout');
 }, false);
 
 document.getElementById('purchaseButton').addEventListener('click', function() {
-  cbq('track', 'Purchase', {
-    value: 'fdsjflds',
+  fbq('track', 'Purchase', {
+    value: 100,
     currency: 'USD',
   });
 }, false);
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
-  cbq('track', 'Subscribe');
+  fbq('track', 'Subscribe');
 }, false);
 
 document.getElementById('registrationButton').addEventListener('click', function() {
-  cbq('track', 'CompleteRegistration');
+  fbq('track', 'CompleteRegistration');
 }, false);
-
 </script>
 </body>
