@@ -36,10 +36,14 @@ Tenant:
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
+        <li><button id="siteButton" type="button">Site 2</button></li>
     </ul>
     </div>
 
 <script type="text/javascript">
+document.getElementById('siteButton').addEventListener('click', function() {
+  fbq('track', 'Site_2');
+}, false);
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
   fbq('track', 'AddToWishlist');
 }, false);
