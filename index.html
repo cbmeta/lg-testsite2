@@ -48,20 +48,20 @@ Tenant:
 </ul></div>
 <script type="text/javascript">
   for(var i = 0; i < 10; i++) {
-document.getElementById('addToWishlistButton').addEventListener('click', function() {cbq('track', 'AddToWishlist'); }, false);
-document.getElementById('addToCartButton').addEventListener('click', function() {cbq('track', 'AddToCart');}, false);
-document.getElementById('checkoutButton').addEventListener('click', function() {cbq('track', 'InitiateCheckout');}, false);
-document.getElementById('purchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: '12.34',currency: 'USD',});}, false);
-document.getElementById('subcribeButton').addEventListener('click', function() {cbq('track', 'Subscribe');}, false);
-document.getElementById('registrationButton').addEventListener('click', function() {cbq('track', 'CompleteRegistration');}, false);
-document.getElementById('siteButton').addEventListener('click', function() {cbq('track', 'Site0')}, false);
-document.getElementById('invalidpurchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: 'fdsjflds',currency: 'USD',});}, false);
-document.getElementById('searchButton').addEventListener('click', function() {cbq('track', 'Search'); }, false);    
-document.getElementById('contactButton').addEventListener('click', function() {cbq('track', 'Contact'); }, false);    
-document.getElementById('donateButton').addEventListener('click', function() {cbq('track', 'Donate'); }, false);    
-document.getElementById('rateButton').addEventListener('click', function() {cbq('track', 'Rate'); }, false);    
-document.getElementById('adClickButton').addEventListener('click', function() {cbq('track', 'AdClick'); }, false);
-document.getElementById('purchaseNoValueButton').addEventListener('click', function() {cbq('track', 'Purchase', {currency: 'USD',});}, false);
+document.getElementById('addToWishlistButton').addEventListener('click', function() {fbq('track', 'AddToWishlist'); }, false);
+document.getElementById('addToCartButton').addEventListener('click', function() {fbq('track', 'AddToCart');}, false);
+document.getElementById('checkoutButton').addEventListener('click', function() {fbq('track', 'InitiateCheckout');}, false);
+document.getElementById('purchaseButton').addEventListener('click', function() {fbq('track', 'Purchase', {value: '12.34',currency: 'USD',});}, false);
+document.getElementById('subcribeButton').addEventListener('click', function() {fbq('track', 'Subscribe');}, false);
+document.getElementById('registrationButton').addEventListener('click', function() {fbq('track', 'CompleteRegistration');}, false);
+document.getElementById('siteButton').addEventListener('click', function() {fbq('track', 'Site0')}, false);
+document.getElementById('invalidpurchaseButton').addEventListener('click', function() {fbq('track', 'Purchase', {value: 'fdsjflds',currency: 'USD',});}, false);
+document.getElementById('searchButton').addEventListener('click', function() {fbq('track', 'Search'); }, false);    
+document.getElementById('contactButton').addEventListener('click', function() {fbq('track', 'Contact'); }, false);    
+document.getElementById('donateButton').addEventListener('click', function() {fbq('track', 'Donate'); }, false);    
+document.getElementById('rateButton').addEventListener('click', function() {fbq('track', 'Rate'); }, false);    
+document.getElementById('adClickButton').addEventListener('click', function() {fbq('track', 'AdClick'); }, false);
+document.getElementById('purchaseNoValueButton').addEventListener('click', function() {fbq('track', 'Purchase', {currency: 'USD',});}, false);
 }
 </script>
 </body>
