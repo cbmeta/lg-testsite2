@@ -1,7 +1,7 @@
 Code:        FBQ 
 Instance:    
 Target URL:  
-Target MP:   1911616415910147 
+Target MP:   9806674839424420 
 Pipeline:    
 Tenant:      
 
@@ -16,59 +16,52 @@ Tenant:
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1911616415910147');
+  fbq('init', '9806674839424420');
   fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1911616415910147&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=9806674839424420&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 <meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
 <title>pixel test page</title>
 </head>
-<body>
-    <h2>Pixel Test Page for FBQ</h2>
-    <div>
-    <ul>
-        <li><button id="addToWishlistButton" type="button">Add to Wishlist</button></li>
-        <li><button id="addToCartButton" type="button">Add to Cart</button></li>
-        <li><button id="checkoutButton" type="button">Check Out</button></li>
-        <li><button id="purchaseButton" type="button">Purchase</button></li>
-        <li><button id="subcribeButton" type="button">Subscribe</button></li>
-        <li><button id="registrationButton" type="button">Registration</button></li>
-        <li><button id="siteButton" type="button">Site 2</button></li>
-    </ul>
-    </div>
-
+<body> 
+<h2>pixel test page</h2>
+<div><ul>
+  <li><button id="addToWishlistButton" type="button">Add to Wishlist (x10)</button></li>
+  <li><button id="addToCartButton" type="button">Add to Cart (x10)</button></li>
+  <li><button id="checkoutButton" type="button">Check Out (x10)</button></li>
+  <li><button id="purchaseButton" type="button">Purchase (x10)</button></li>
+  <li><button id="subcribeButton" type="button">Subscribe (x10)</button></li>
+  <li><button id="registrationButton" type="button">Registration (x10)</button></li>
+</ul></div>
+<div><ul>
+  <li><button id="siteButton" type="button">Site 0 (x10)</button></li>
+  <li><button id="invalidpurchaseButton" type="button">Invalid Purchase (x10)</button></li>
+  <li><button id="searchButton" type="button">Search (x10)</button></li>
+  <li><button id="contactButton" type="button">Contact (x10)</button></li>
+  <li><button id="donateButton" type="button">Donate (x10)</button></li>
+  <li><button id="rateButton" type="button">Rate (x10)</button></li>
+  <li><button id="adClickButton" type="button">AdClick (x10)</button></li>
+  <li><button id="purchaseNoValueButton" type="button">Purchase With No Value (x10)</button></li>
+</ul></div>
 <script type="text/javascript">
-document.getElementById('siteButton').addEventListener('click', function() {
-  fbq('track', 'Site_2');
-}, false);
-document.getElementById('addToWishlistButton').addEventListener('click', function() {
-  fbq('track', 'AddToWishlist');
-}, false);
-
-document.getElementById('addToCartButton').addEventListener('click', function() {
-  fbq('track', 'AddToCart');
-}, false);
-
-document.getElementById('checkoutButton').addEventListener('click', function() {
-  fbq('track', 'InitiateCheckout');
-}, false);
-
-document.getElementById('purchaseButton').addEventListener('click', function() {
-  fbq('track', 'Purchase', {
-    value: 100,
-    currency: 'USD',
-  });
-}, false);
-
-document.getElementById('subcribeButton').addEventListener('click', function() {
-  fbq('track', 'Subscribe');
-}, false);
-
-document.getElementById('registrationButton').addEventListener('click', function() {
-  fbq('track', 'CompleteRegistration');
-}, false);
+  for(var i = 0; i < 10; i++) {
+document.getElementById('addToWishlistButton').addEventListener('click', function() {cbq('track', 'AddToWishlist'); }, false);
+document.getElementById('addToCartButton').addEventListener('click', function() {cbq('track', 'AddToCart');}, false);
+document.getElementById('checkoutButton').addEventListener('click', function() {cbq('track', 'InitiateCheckout');}, false);
+document.getElementById('purchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: '12.34',currency: 'USD',});}, false);
+document.getElementById('subcribeButton').addEventListener('click', function() {cbq('track', 'Subscribe');}, false);
+document.getElementById('registrationButton').addEventListener('click', function() {cbq('track', 'CompleteRegistration');}, false);
+document.getElementById('siteButton').addEventListener('click', function() {cbq('track', 'Site0')}, false);
+document.getElementById('invalidpurchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: 'fdsjflds',currency: 'USD',});}, false);
+document.getElementById('searchButton').addEventListener('click', function() {cbq('track', 'Search'); }, false);    
+document.getElementById('contactButton').addEventListener('click', function() {cbq('track', 'Contact'); }, false);    
+document.getElementById('donateButton').addEventListener('click', function() {cbq('track', 'Donate'); }, false);    
+document.getElementById('rateButton').addEventListener('click', function() {cbq('track', 'Rate'); }, false);    
+document.getElementById('adClickButton').addEventListener('click', function() {cbq('track', 'AdClick'); }, false);
+document.getElementById('purchaseNoValueButton').addEventListener('click', function() {cbq('track', 'Purchase', {currency: 'USD',});}, false);
+}
 </script>
 </body>
