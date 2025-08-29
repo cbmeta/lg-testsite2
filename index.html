@@ -1,62 +1,81 @@
 <p>
-  FBQ Site (Original Body code)
+  Test Meta Site (FBQ) <!-- Original & Modified Body code -->
     <br />
-  Test 2: Meta TestWebsite & Meta Pixel + Combined
     <br />
     <br />
     <br />
     <br />
 </p>
- 
+
 <head>
 <!-- ---------------------------------------------------------------------------------- -->
 <!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '701494862399303');
-fbq('track', 'PageView');
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '891851819693214');
+  fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=701494862399303&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=891851819693214&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code  -->
-
-<!-- Signals Gateway Pixel + Meta Pixel Code -->
-    <script>
-      !(function(f,b,e,v,vv,n,nn,t,s,tt,ss){
-        if (!f.cbq){nn = f.cbq = function(){nn.initialized ? nn.apply(f.cbq, arguments) : nn.queue.push(arguments);};
-        if(!f._cbq) f._cbq = nn;
-        nn.push = nn; nn.loaded = !0; nn.version = '2.0'; nn.queue = [];
-        tt = b.createElement(e); tt.async = !0; tt.src = vv; ss=b.getElementsByTagName(e)[0]; ss.parentNode.insertBefore(tt,ss);}
-        if (f.xbq) return; if (f.fbq) f.xbq=f.fbq;
-        n = f.fbq = function()
-        {if(arguments[0].startsWith('track')){n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);f.cbq.initialized ? f.cbq.apply(f.cbq, arguments) : f.cbq.queue.push(arguments);}
-        else{n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);}};
-        if(!f._fbq) f._fbq = n;
-        n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = (f.xbq)?f.xbq.queue:[];
-        t = b.createElement(e); t.async = !0; t.src = v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);
-      })
-      (window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js', 'https://ggonzalez62351-ejm5xg56sq-uc.a.run.app/sdk/8787543525771797142/events.js');
-      fbq('init', '701494862399303');fbq('track', 'PageView');
-      cbq('setHost', 'https://ggonzalez62351-ejm5xg56sq-uc.a.run.app/');
-    cbq('init', '8787543525771797142');
-      cbq('set', 'integrationMethod', 'forkFromSnippetCode');
-      cbq('track', 'PageView');
-      
-    </script>
-  <!-- End Signals Gateway Pixel + Meta Pixel Code -->
-
+<!-- End Meta Pixel Code -->
 
 
 <!-- ---------------------------------------------------------------------------------- -->
+<!-- Modified FBQ body Code -->
+<meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
+<title>pixel test page</title>
+</head>
+<body> 
+<h2>pixel test page</h2>
+<div><ul>
+  <li><button id="addToWishlistButton" type="button">Add to Wishlist (x10)</button></li>
+  <li><button id="addToCartButton" type="button">Add to Cart (x10)</button></li>
+  <li><button id="checkoutButton" type="button">Check Out (x10)</button></li>
+  <li><button id="purchaseButton" type="button">Purchase (x10)</button></li>
+  <li><button id="subcribeButton" type="button">Subscribe (x10)</button></li>
+  <li><button id="registrationButton" type="button">Registration (x10)</button></li>
+</ul></div>
+<div><ul>
+  <li><button id="siteButton" type="button">Site 2 (x10)</button></li>          <!-- Site # -->
+  <li><button id="invalidpurchaseButton" type="button">Invalid Purchase (x10)</button></li>
+  <li><button id="searchButton" type="button">Search (x10)</button></li>
+  <li><button id="contactButton" type="button">Contact (x10)</button></li>
+  <li><button id="donateButton" type="button">Donate (x10)</button></li>
+  <li><button id="rateButton" type="button">Rate (x10)</button></li>
+  <li><button id="adClickButton" type="button">AdClick (x10)</button></li>
+  <li><button id="purchaseNoValueButton" type="button">Purchase With No Value (x10)</button></li>
+</ul></div>
+<script type="text/javascript">
+  for(var i = 0; i < 10; i++) {
+document.getElementById('siteButton').addEventListener('click', function() {fbq('track', 'Site2')}, false); 
+document.getElementById('addToWishlistButton').addEventListener('click', function() {fbq('track', 'AddToWishlist'); }, false);
+document.getElementById('addToCartButton').addEventListener('click', function() {fbq('track', 'AddToCart');}, false);
+document.getElementById('checkoutButton').addEventListener('click', function() {fbq('track', 'InitiateCheckout');}, false);
+document.getElementById('purchaseButton').addEventListener('click', function() {fbq('track', 'Purchase', {value: '12.34',currency: 'USD',});}, false);
+document.getElementById('subcribeButton').addEventListener('click', function() {fbq('track', 'Subscribe');}, false);
+document.getElementById('registrationButton').addEventListener('click', function() {fbq('track', 'CompleteRegistration');}, false);
+document.getElementById('invalidpurchaseButton').addEventListener('click', function() {fbq('track', 'Purchase', {value: 'fdsjflds',currency: 'USD',});}, false);
+document.getElementById('searchButton').addEventListener('click', function() {fbq('track', 'Search'); }, false);    
+document.getElementById('contactButton').addEventListener('click', function() {fbq('track', 'Contact'); }, false);    
+document.getElementById('donateButton').addEventListener('click', function() {fbq('track', 'Donate'); }, false);    
+document.getElementById('rateButton').addEventListener('click', function() {fbq('track', 'Rate'); }, false);    
+document.getElementById('adClickButton').addEventListener('click', function() {fbq('track', 'AdClick'); }, false);
+document.getElementById('purchaseNoValueButton').addEventListener('click', function() {fbq('track', 'Purchase', {currency: 'USD',});}, false);
+}
+</script>
+</body>
+
+<!-- ---------------------------------------------------------------------------------- -->
 <!-- Original FBQ body Code -->
+<!-- 
 <meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
 <title>pixel test page</title>
 </head>
@@ -102,4 +121,5 @@ document.getElementById('registrationButton').addEventListener('click', function
 }, false);
 </script>
 </body>
+-->
 <!-- ---------------------------------------------------------------------------------- -->
